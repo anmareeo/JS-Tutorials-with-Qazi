@@ -97,3 +97,19 @@ var name = prompt ('What is your name?');
 greeting(name)
 
 //when we called the function greeting, it took in "name" as input, which is the variable just above. and the variable of name is whatever the answer is to the question asked with the prompt.
+
+//While Loops
+
+var num = 0
+while (num < 100) {  //it looks at this part of the code and asks if the number is less than 100. is this true? it is
+num += 1  //it reads this part of the code, and since num = 0 it will increment num by one, according to this code.
+console.log (num) //then it reads this part of the code that is just telling it to print the output
+}
+//now it repeats the process, but since it incremented by one, num is now one, which is still less than 100, so it will perform the next step of incrementing by one. So now num = 2, and so on until it gets to 99. 99 is still less than 100, so it will add one and then console 100. Then num is 100. it will ask is it true that 100 is less than 100? The answer is no, so that becomes false and the instructions of incrementing will no longer apply.
+
+//For Loops do pretty much the same thing.
+
+for(let n = 0; n < 100; n++){
+    console.log(n)
+}
+//it is best to use for loops. they are cleaner and there is a smaller chance of letting the loop run forever, because it always has to have that stopping point. Just don't forget to put semicolons after each parameter in the parens or it won't work.
