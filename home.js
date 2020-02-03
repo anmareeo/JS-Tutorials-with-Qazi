@@ -303,3 +303,92 @@ for(let nbr=0; nbr<10; nbr++) {
 }
 console.log(emptyArray)
 //shows (10) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+//objects in javascript
+//diaries in python
+
+let student = {
+    first: 'Anmaree', 
+    last: 'Osmond', 
+    age: 29, 
+    isHappy: true,
+    //we can do object oriented programming as well..
+    studentInfo: function (){
+        return this.first + '\n' + this.last + '\n' + this.age; //this is the same as self in python
+    }
+}
+
+console.log (student.first)
+//shows Anmaree
+console.log (student['first'])
+//shows Anmaree
+//the above two ways work the same, but the dot notation is easier
+console.log (student.isHappy)
+//shows true
+// console.log (student['isHappy'])
+//shows true
+// student.first = 'Ree' //change values in an object
+// console.log(student.first)
+//shows Ree
+// student['first'] = "Stewart"
+// console.log(student['first'])
+//shows Stewart
+
+//you can change values and increment
+student.age++ //increment age
+console.log(student.age)
+//shows 30
+console.log(student.studentInfo())
+/*shows 
+Anmaree
+Osmond*/ 
+// the function of studentInfo was to put the first name on one line and the last name on the next line.
+//I added and extra element to that same funciton, and this is what shows in the console:
+/*
+Anmaree
+Osmond
+30
+*/
+
+
+//-Conditionals, Control Flows, If Else
+// 18-35 is the target demographic
+// && is AND
+// || is OR - these are both Boolean operators
+
+// var age = prompt('What is your age?')
+/*if ( (age>=18) && (age<=35) ){
+    status = 'target demo';
+    console.log(status)
+} else {
+    status = 'not my audience'
+    console.log(status)
+}
+*/
+//notice that the outer parens on the if line above(360) are for the if statement, and the inner are for the crieterion
+//I was prompted to enter an age. I picked 29 and received a reply of 'target demo'
+
+//Switch Statements
+//differentiate between weekday and weekend
+// day 0 ==> Sunday
+// day 6 ==> Saturday
+// day 4 ==> Thursday ==> Weekday
+
+switch (2) {
+    case 0:
+        text = 'weekend';
+        break;
+    case 5:
+        text = 'weekend';
+        break;
+    case 6:
+        text = 'weekend';
+        break;
+    default:
+        text = 'weekday'   
+}
+console.log(text)
+//with switch(6) it showed weekend
+//switch(2) showed weekday
+//This is easier than having to do a bunch of if statements if monday is a weekday, if tuesdays, etc
+//without the breaks in between, the code would always just be read straight to default. Don't forget the breaks.
